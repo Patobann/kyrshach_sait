@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ExportProject_OOP — Портфолио</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #f6f6fa; color: #333; margin: 0; }
+    header { background: #2940d3; color: #fff; padding: 2rem 0 1rem 0; text-align: center; }
+    .container { max-width: 800px; margin: 2rem auto; background: #fff; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 16px #0001;}
+    h1 { font-size: 2.2rem; margin-bottom: 0.5rem;}
+    .tag { background: #f0f2fa; color: #2940d3; display: inline-block; margin: 0.2em 0.4em 0.2em 0; padding: 0.2em 0.8em; border-radius: 8px; font-size: 0.97em;}
+    .uml-diagram { text-align: center; margin: 2rem 0;}
+    .download-btn { display: inline-block; background: #2940d3; color: #fff; text-decoration: none; padding: 0.7em 2em; border-radius: 8px; margin: 1em 0; font-size: 1.1em;}
+    pre { background: #f6f6fa; border-radius: 8px; padding: 1em; overflow-x: auto;}
+    footer { text-align: center; font-size: 0.97em; margin: 2em 0 0.5em 0; color: #555;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ExportProject_OOP</h1>
+    <div>Объектно-Ориентированное Программирование — портфолио проекта</div>
+    <div>
+      <span class="tag">C++</span>
+      <span class="tag">OOP</span>
+      <span class="tag">Visual Studio</span>
+      <span class="tag">2024</span>
+    </div>
+  </header>
+  <div class="container">
+    <h2>Описание</h2>
+    <p>
+      <b>ExportProject_OOP</b> — учебный проект, реализующий ключевые концепции объектно-ориентированного программирования на C++.<br>
+      <i>Включает абстрактный базовый класс, четыре наследника, интерфейсы, перегрузку операторов, обработку исключений, сериализацию и сохранение данных.</i>
+    </p>
+    <h3>Функционал проекта:</h3>
+    <ul>
+      <li>Абстрактный базовый класс <b>ExportControl</b></li>
+      <li>Наследники: <b>PipelineExport</b>, <b>MarineExport</b>, <b>RailExport</b>, <b>TruckExport</b></li>
+      <li>Интерфейсы: <b>IShippingControl</b>, <b>IExportEfficiency</b></li>
+      <li>STL-контейнеры: <b>std::vector</b> с <b>shared_ptr</b></li>
+      <li>Перегрузка операторов: <b>==</b>, <b>&lt;</b>, <b>+</b>, <b>++</b></li>
+      <li>Обработка исключений</li>
+      <li>Ввод/вывод данных, сохранение и загрузка из файла</li>
+      <li>UML-диаграмма структуры проекта</li>
+    </ul>
+
+    <div class="uml-diagram">
+      <h3>UML-диаграмма классов</h3>
+      <img src="uml_diagram.jpg" alt="UML диаграмма" style="max-width:100%;border:1px solid #ddd;border-radius:8px;">
+    </div>
+
+    <h3>Демонстрация работы меню</h3>
+    <pre>
+=== МЕНЮ ===
+1. Добавить поставку
+2. Удалить поставку
+3. Показать все поставки
+4. Проверить перегрузку операторов
+5. Сохранить в файл
+6. Загрузить из файла
+7. Выйти
+    </pre>
+
+    <h3>Скачать проект</h3>
+    <a class="download-btn" href="ExportProject_last_100%.zip" download>Скачать архив проекта (.zip)</a>
+    <p>Открывается и собирается в Visual Studio 2022+ (или через g++).</p>
+
+    <h3>Инструкция по запуску</h3>
+    <ol>
+      <li>Распакуйте архив</li>
+      <li>Откройте файл <b>ExportProject_OOP_final_OPERATORS.sln</b> в Visual Studio</li>
+      <li>Соберите и запустите проект (<b>Debug x64</b> или <b>Release x64</b>)</li>
+      <li>Если используете g++:<br>
+        <code>g++ -std=c++17 -I. main.cpp ExportControl.cpp MarineExport.cpp RailExport.cpp TruckExport.cpp PipelineExport.cpp -o export_app</code>
+      </li>
+    </ol>
+    <h3>Контакты</h3>
+    <p>Студент группы БИН24-01 (Лыженков Леонид)</p>
+  </div>
+  <footer>
+    &copy; 2024 ExportProject_last_100% &mdash; Ваша учебная работа
+  </footer>
+</body>
+</html>
